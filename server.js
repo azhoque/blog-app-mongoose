@@ -100,7 +100,7 @@ app.delete('/:id', (req, res) => {
     });
 });
 
-app.use('*', function(){
+app.use('*', function(req, res){
     res.status(404).json({message: 'Not found!'});
 });
 
